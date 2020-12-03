@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "task g++",    //修改此项
+            "command": "C:\\other D\\Mingw64\\bin\\g++.exe",
+            "args": [
+                "${workspaceFolder}\\*.cpp",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-g"
+            ],
+            "options": {
+                "cwd": "C:\\other D\\Mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}
